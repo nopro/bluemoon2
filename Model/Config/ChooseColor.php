@@ -9,23 +9,11 @@ class ChooseColor implements \Magento\Framework\Option\ArrayInterface
      */
     public function toOptionArray()
     {
-        return [
-            [
-                'value' => 'blue',
-                'label' => __('Blue'),
-            ],
-            [
-                'value' => 'black',
-                'label' => __('Black'),
-            ],
-            [
-                'value' => 'white',
-                'label' => __('White'),
-            ],
-            [
-                'value' => 'silver',
-                'label' => __('Silver'),
-            ]
-        ];
+        return array(
+		     array('value' => 'blue',   'label' => __('Blue')),
+		     array('value' => 'black',  'label' => __('Black')),
+		     array('value' => 'white',  'label' => __('White')),
+		     array('value' => 'silver', 'label' => __('Silver'))
+		     );
     }
 }
