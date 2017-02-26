@@ -1,10 +1,11 @@
 <?php
 
-class NoPro_Bluemoon_Helper_Data extends \Magento\Framework\App\Helper\AbstractHelper {
+namespace NoPro\Bluemoon\Helper;
+use Magento\Framework\App\Helper\AbstractHelper;
+class Data extends AbstractHelper {
 
-  public function isEnabled() {
-    return 1;
-  }
-  
+    public function isEnabled() {
+        return 1;
+    }
+
 }
-
